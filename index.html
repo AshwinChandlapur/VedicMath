@@ -11,20 +11,23 @@
   <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Roboto+Slab">
   <link rel="stylesheet" href="css/common.css">
   <link rel="stylesheet" href="css/demo.css">
+  <link rel="stylesheet" href="css/button.css">
   <link href='https://fonts.googleapis.com/css?family=Open+Sans|Chewy|Lovers+Quarrel|Alegreya+Sans|Oswald:700|Syncopate' rel='stylesheet' type='text/css'>
 
   <!-- js -->
   <script src="js/modernizr.js"></script>
   <script src="js/jova.js"></script>
+  <script src="js/button.js"></script>
 </head>
 
 <body>
 
 <h1> Vedic Mathematics<h1>
+
 <div class="wrapper">
 <main>
-    <div class="container">
-      <svg xmlns="http://www.w3.org/2000/svg" id="svg" class="svg" viewBox="0 0 960 480" preserveAspectRatio="xMinYMin meet">
+<div class="container">
+ <svg xmlns="http://www.w3.org/2000/svg" id="svg" class="svg" viewBox="0 0 960 480" preserveAspectRatio="xMinYMin meet">
 -----------------------------------------------------------
 <g id="img1" style="visibility:hidden">       
 <!--8 in 98-->
@@ -1732,19 +1735,32 @@
 </main>
 </div><!-- /#wrapper -->
 <h1>The Trick Works For Numbers Close to 100<h1>
-<button type="button" class="btn btn-default" onclick="start(),loadb1();">Start</button>
- <p id='p1' style="visibility:hidden">Take Two Numbers close to 100. Here we have chosen 98 and 96.</p>
 
- <button type="button" id="rule1" style="visibility:hidden"class="btn btn-default" onclick="r1(),loadb2();">Step 1</button>
+
+  <div class="wrap">
+      <a onclick="start(),loadb1();"class="button">Start</a>
+  </div>
+  <p id='p1' style="visibility:hidden">Take Two Numbers close to 100. Here we have chosen 98 and 96.</p>
+  
+  <div class="wrap">
+    <a id="rule1" style="visibility:hidden" onclick="r1(),loadb2();" class="button2">Step 1</a>
+  </div>
  <p id='p2'style="visibility:hidden">Write 98 as (100-2) and 96 as (100-4)</p>
 
- <button type="button" id="rule2" style="visibility:hidden"class="btn btn-default" onclick="r2(),loadb3();">Step 2</button>
+ <div class="wrap">
+      <a id="rule2" style="visibility:hidden" onclick="r2(),loadb3();"class="button">Step 2</a>
+  </div>
  <p id='p3'style="visibility:hidden">Multiply 2&4, Add 2&4.Make Note.</p>
 
- <button type="button" id="rule3" style="visibility:hidden"class="btn btn-default" onclick="r3(),loadb4();">Step 3</button>
+ <div class="wrap">
+    <a id="rule3" style="visibility:hidden" onclick="r3(),loadb4();" class="button2">Step 3</a>
+  </div>
  <p id='p4'style="visibility:hidden">SubTract 6 from 100 and Keep 08 as it is.</p>
 
- <button type="button" id="rule4" style="visibility:hidden"class="btn btn-default" onclick="r4(),loadb5();">Step 4</button>
+
+ <div class="wrap">
+      <a id="rule4" style="visibility:hidden" onclick="r4(),loadb5();"class="button">Step 4</a>
+  </div>
  <p id='p5'style="visibility:hidden">Enter 94 in the First Two Blanks. Enter 08 in the Next two Blanks.</p>
 
 <!-- js -->
